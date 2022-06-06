@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Event } from '../models/event.module';
-
+import { MyEvents } from '../models/event.module';
+// import { Events } from '../models/event.module';
 @Component({
   selector: 'app-first-event-cat',
   templateUrl: './first-event-cat.component.html',
   styleUrls: ['./first-event-cat.component.css']
 })
 export class FirstEventCatComponent implements OnInit {
+  
+  // events: Events[] = [  
+    //   new Event('Most Loved By Parents'),   
+    //   new Event('Editor’s Picks This Week'),  
+    //   new Event('Try Something New in 2021')  
+    // ]; 
+   public events = MyEvents[];
 
-  events: Event[] = [  
-    new Event('Most Loved By Parents'),  
-    new Event('Editor’s Picks This Week'),  
-    new Event('Try Something New in 2021')  
-  ]; 
-  constructor() { }
 
   ngOnInit(): void {
   }
@@ -44,9 +45,5 @@ export class FirstEventCatComponent implements OnInit {
     nav: true
   }
 
-  // events = [
-  //   {heading: 'Most Loved By Parents'},
-  //   {heading: 'Editor’s Picks This Week'},
-  //   {heading: 'Try Something New in 2021'},
-  // ]
+
 }
