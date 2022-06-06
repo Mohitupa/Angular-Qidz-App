@@ -48,7 +48,11 @@ button:focus {
     max-width: 1300px;
 }
 
-
+/* all component */
+.all {
+    margin:0 auto;
+    max-width: 1500px;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -553,7 +557,7 @@ section#copyright {
     width: 45px;
     height: 45px;
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 15px;
     content: '';
 }
@@ -563,7 +567,7 @@ section#copyright {
     width: 45px;
     height: 45px;
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 15px;
     content: '';
 }
@@ -603,7 +607,7 @@ section#copyright {
     display: block;
 }
 
-.category-data button.owl-prev span, .category-data button.owl-next span {
+.category-data .owl-prev , .category-data .owl-next  {
     font-size: 58px;
    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
 background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
@@ -623,7 +627,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding-top: 5px;
     color: #3c3c3c;
 }
-.category-data button.owl-next span{
+.category-data .owl-next {
   right:0;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -722,12 +726,12 @@ section#advertisement {
 .ad-banner .owl-nav.disabled {
     display: block !important;
 }
-.ad-banner .owl-nav span {
+.ad-banner .owl-nav  {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.ad_banner .owl-nav button.owl-prev, .ad_banner .owl-nav button.owl-next {
+.ad_banner .owl-nav .owl-prev, .ad_banner .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -738,10 +742,10 @@ section#advertisement {
     position: absolute;
     top: 43%;
 }
-.ad_banner .owl-nav button.owl-prev{
+.ad_banner .owl-nav .owl-prev{
   left: -13px;
 }
-.ad_banner .owl-nav button.owl-next{
+.ad_banner .owl-nav .owl-next{
   right: -13px;
 }
 /*--------------------------------------------------------------
@@ -779,12 +783,12 @@ section#advertisement {
 .event_cat_carousel .owl-nav.disabled {
     display: block !important;
 }
-.event_cat_carousel .owl-nav span {
+.event_cat_carousel .owl-nav {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.event_cat_carousel .owl-nav button.owl-prev, .event_cat_carousel .owl-nav button.owl-next {
+.event_cat_carousel .owl-nav .owl-prev, .event_cat_carousel .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -795,10 +799,10 @@ section#advertisement {
     position: absolute;
     top: 43%;
 }
-.event_cat_carousel .owl-nav button.owl-prev{
+.event_cat_carousel .owl-nav .owl-prev{
   left: -22px;
 }
-.event_cat_carousel .owl-nav button.owl-next{
+.event_cat_carousel .owl-nav .owl-next{
   right: -22px;
 }
 
@@ -880,12 +884,12 @@ span.small_text {
 .first_event_carousel .owl-nav.disabled {
     display: block !important;
 }
-.first_event_carousel .owl-nav span {
+.first_event_carousel .owl-nav  {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.first_event_carousel .owl-nav button.owl-prev, .first_event_carousel .owl-nav button.owl-next {
+.first_event_carousel .owl-nav .owl-prev, .first_event_carousel .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -896,10 +900,10 @@ span.small_text {
     position: absolute;
     top: 43%;
 }
-.first_event_carousel .owl-nav button.owl-prev{
+.first_event_carousel .owl-nav .owl-prev{
   left: -22px;
 }
-.first_event_carousel .owl-nav button.owl-next{
+.first_event_carousel .owl-nav .owl-next{
   right: -22px;
 }
 button.btn.bn_btn {
@@ -955,12 +959,12 @@ button.btn.rm_btn {
 .sec_event_carousel .owl-nav.disabled {
     display: block !important;
 }
-.sec_event_carousel .owl-nav span {
+.sec_event_carousel .owl-nav  {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.sec_event_carousel .owl-nav button.owl-prev, .sec_event_carousel .owl-nav button.owl-next {
+.sec_event_carousel .owl-nav .owl-prev, .sec_event_carousel .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -971,10 +975,10 @@ button.btn.rm_btn {
     position: absolute;
     top: 43%;
 }
-.sec_event_carousel .owl-nav button.owl-prev{
+.sec_event_carousel .owl-nav .owl-prev{
   left: -22px;
 }
-.sec_event_carousel .owl-nav button.owl-next{
+.sec_event_carousel .owl-nav .owl-next{
   right: -22px;
 }
 /*--------------------------------------------------------------
@@ -983,12 +987,12 @@ button.btn.rm_btn {
 .third_event_carousel .owl-nav.disabled {
     display: block !important;
 }
-.third_event_carousel .owl-nav span {
+.third_event_carousel .owl-nav  {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.third_event_carousel .owl-nav button.owl-prev, .third_event_carousel .owl-nav button.owl-next {
+.third_event_carousel .owl-nav .owl-prev, .third_event_carousel .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -999,10 +1003,10 @@ button.btn.rm_btn {
     position: absolute;
     top: 43%;
 }
-.third_event_carousel .owl-nav button.owl-prev{
+.third_event_carousel .owl-nav .owl-prev{
   left: -22px;
 }
-.third_event_carousel .owl-nav button.owl-next{
+.third_event_carousel .owl-nav .owl-next{
   right: -22px;
 }
 /*--------------------------------------------------------------
@@ -1232,12 +1236,12 @@ button.btn.browse_rm_btn {
 .browse_cat_carousel .owl-nav.disabled {
     display: block !important;
 }
-.browse_cat_carousel .owl-nav span {
+.browse_cat_carousel .owl-nav  {
     font-size: 60px;
     line-height: 0;
     color: #4bbfba;
 }
-.browse_cat_carousel .owl-nav button.owl-prev, .browse_cat_carousel .owl-nav button.owl-next {
+.browse_cat_carousel .owl-nav .owl-prev, .browse_cat_carousel .owl-nav .owl-next {
     width: 45px !important;
     height: 45px !important;
     background: white;
@@ -1248,10 +1252,10 @@ button.btn.browse_rm_btn {
     position: absolute;
     top: 43%;
 }
-.browse_cat_carousel .owl-nav button.owl-prev{
+.browse_cat_carousel .owl-nav .owl-prev{
   left: -22px;
 }
-.browse_cat_carousel .owl-nav button.owl-next{
+.browse_cat_carousel .owl-nav .owl-next{
   right: -22px;
 }
 section#browse_category {
@@ -3897,4 +3901,50 @@ body .slick-next {
   width: 40px;
   background: grey !important;
   z-index: 100;
+}
+
+/* .owl-nav {
+
+} */
+/* .owl-next {
+  height: 50px;
+  width: 50px;
+  color: lightseagreen;
+  font-size: 30px;
+  border-radius: 49px;
+  background: #fff;
+  float: right;
+  z-index: 100;
+}
+.owl-prev {
+  border-radius: 49px;
+  height: 50px;
+  width: 50px;
+  color: lightseagreen;
+  font-size: 30px;
+  background: #fff;
+  z-index: 100;
+  float: left;
+} */
+
+.owl-prev {
+  font-size: 70px;
+  /* line-height: 0; */
+  color: #4bbfba;
+  background: white;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: none;
+  padding: 14px!important;
+}
+
+.owl-next {
+  font-size: 70px;
+  /* line-height: 0; */
+  color: #4bbfba;
+  background: white;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: none;
+  padding: 14px!important;
 }

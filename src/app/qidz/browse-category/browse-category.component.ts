@@ -18,6 +18,7 @@ export class BrowseCategoryComponent implements OnInit {
     mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
+    autoplay:true,
     dots: false,
     navSpeed: 600,
     navText: ['&#8249', '&#8250;'],

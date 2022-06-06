@@ -14,11 +14,12 @@ export class HeroSectionComponent implements OnInit {
   } 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
     dots: false,
     navSpeed: 600,
+    autoplay:true,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Event } from '../models/event.module';
 
 @Component({
   selector: 'app-first-event-cat',
@@ -8,15 +9,21 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class FirstEventCatComponent implements OnInit {
 
+  events: Event[] = [  
+    new Event('Most Loved By Parents'),  
+    new Event('Editor’s Picks This Week'),  
+    new Event('Try Something New in 2021')  
+  ]; 
   constructor() { }
 
   ngOnInit(): void {
   }
-  customOptions: OwlOptions = {
+  customOptions: OwlOptions = { 
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
+    autoplay:true,
     dots: false,
     navSpeed: 600,
     navText: ['&#8249', '&#8250;'],
@@ -36,4 +43,10 @@ export class FirstEventCatComponent implements OnInit {
     },
     nav: true
   }
+
+  // events = [
+  //   {heading: 'Most Loved By Parents'},
+  //   {heading: 'Editor’s Picks This Week'},
+  //   {heading: 'Try Something New in 2021'},
+  // ]
 }

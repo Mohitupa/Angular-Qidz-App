@@ -41,9 +41,10 @@ export class AdvertisementSectionComponent implements OnInit {
   // }
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
+    autoplay:true,
     dots: false,
     navSpeed: 600,
     navText: ['&#8249', '&#8250;'],
