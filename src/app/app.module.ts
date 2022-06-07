@@ -20,6 +20,15 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { EventCategoryComponent } from './qidz/event-category/event-category.component';
 import { FirstEventCatComponent } from './qidz/first-event-cat/first-event-cat.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { QidzEventDetailsComponent } from './qidz-event-details/qidz-event-details.component';
+import { EventsSidebarComponent } from './qidz-event-details/events-sidebar/events-sidebar.component';
+import { EventsReviewSectionComponent } from './qidz-event-details/events-review-section/events-review-section.component';
+import { UserReviewSectionComponent } from './qidz-event-details/user-review-section/user-review-section.component';
+import { ActivityDescriptionSectionComponent } from './qidz-event-details/activity-description-section/activity-description-section.component';
+import { CaterpillarSectionComponent } from './qidz-event-details/caterpillar-section/caterpillar-section.component';
+import { EventDiscountSectionComponent } from './qidz-event-details/event-discount-section/event-discount-section.component';
+import { MediaSidebarSectionComponent } from './qidz-event-details/media-sidebar-section/media-sidebar-section.component';
+import { BreakfastSectionComponent } from './qidz-event-details/breakfast-section/breakfast-section.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +46,16 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HeroSectionComponent,
     AdvertisementSectionComponent,
     EventCategoryComponent,
-    FirstEventCatComponent
+    FirstEventCatComponent,
+    QidzEventDetailsComponent,
+    EventsSidebarComponent,
+    EventsReviewSectionComponent,
+    UserReviewSectionComponent,
+    ActivityDescriptionSectionComponent,
+    CaterpillarSectionComponent,
+    EventDiscountSectionComponent,
+    MediaSidebarSectionComponent,
+    BreakfastSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,29 @@
 <div class="all">
     <app-header></app-header>
-    <app-hero-section></app-hero-section>
-    <app-advertisement-section></app-advertisement-section>
-    <app-event-category></app-event-category>
-    <app-first-event-cat></app-first-event-cat>
-    <app-blog-section></app-blog-section>
-    <app-browse-category></app-browse-category>
-    <app-home-ad-section></app-home-ad-section>
-    <app-family-section></app-family-section>
-    <app-download-app></app-download-app>
+
+    <div class="custom_manu">        
+        <button (click)="div1Function()">Home</button>
+        <button (click)="div2Function()">Event Details</button>
+    </div><hr>
+    <!-- <button (click)="div3Function()">ghi</button> -->
+    
+    <!-- HOME -->
+    <div *ngIf="div1">
+        <app-hero-section></app-hero-section>
+        <app-advertisement-section></app-advertisement-section>
+        <app-event-category></app-event-category>
+        <app-first-event-cat></app-first-event-cat>
+        <app-blog-section></app-blog-section>
+        <app-browse-category></app-browse-category>
+        <app-home-ad-section></app-home-ad-section>
+        <app-family-section></app-family-section>
+        <app-download-app></app-download-app>
+    </div>
+
+    <!-- Event Details Page -->
+    <div *ngIf="div2">
+        <app-qidz-event-details></app-qidz-event-details>
+    </div>
+    
     <app-footer></app-footer>
 </div>
-
