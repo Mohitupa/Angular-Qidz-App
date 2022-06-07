@@ -14,9 +14,11 @@ export class FirstEventCatComponent implements OnInit {
     //   new Event('Editor’s Picks This Week'),  
     //   new Event('Try Something New in 2021')  
     // ]; 
-   public events = MyEvents[];
+   public events = MyEvents;
 
-
+constructor() {
+  console.log(MyEvents);
+}
   ngOnInit(): void {
   }
   customOptions: OwlOptions = { 

@@ -46,7 +46,7 @@ export let MyEvents = [
         {
             id: "3",
             heading: "Try Something New in 2021",
-            thirdEvent: [
+            data: [
                 {
                     title: "What we learn from cooking together with children",
                     image: "assets/img/banner-ad/image_01.jpg"
