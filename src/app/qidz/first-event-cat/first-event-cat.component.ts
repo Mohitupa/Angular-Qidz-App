@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { MyEvents } from '../models/event.module';
 // import { Events } from '../models/event.module';
@@ -8,31 +8,27 @@ import { MyEvents } from '../models/event.module';
   styleUrls: ['./first-event-cat.component.css']
 })
 export class FirstEventCatComponent implements OnInit {
-  
-  // events: Events[] = [  
-    //   new Event('Most Loved By Parents'),   
-    //   new Event('Editor’s Picks This Week'),  
-    //   new Event('Try Something New in 2021')  
-    // ]; 
-   public events = MyEvents;
 
-constructor() {
-  console.log(MyEvents);
-}
+  @Output() divs = new EventEmitter<any>(); 
+
+  public events = MyEvents;
+
+  constructor() {
+  }
   ngOnInit(): void {
   }
-  customOptions: OwlOptions = { 
+  customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
-    autoplay:true,
+    autoplay: true,
     dots: false,
     navSpeed: 600,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
-        items: 1 
+        items: 1
       },
       400: {
         items: 2
@@ -47,5 +43,8 @@ constructor() {
     nav: true
   }
 
-
+  div2Function(value : any) {
+    // console.log({ div2:true, div1:false, first: 'first-event-component'});
+    this.divs.emit({ div2:true, div1:false});
+  }
 }

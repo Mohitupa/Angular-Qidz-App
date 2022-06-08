@@ -12,7 +12,9 @@
               <div class="first_event_carousel">
                 <owl-carousel-o [options]="customOptions">
 
+                  
                   <ng-template carouselSlide *ngFor="let cData of event.data">
+                    <button (click)="div2Function($event)" class="eventbutton">
                     <div class="slide">
                       <div class="event_box">
                         <div class="events_des_image">
@@ -42,6 +44,7 @@
                         </div>
                       </div>
                     </div>
+                  </button>
                   </ng-template>
 
                 </owl-carousel-o>

@@ -18,5 +18,8 @@
     font-size: 30px;
     background: #fff;
   } */
-
+.eventbutton {
+  background: transparent;
+  border: none;
+}
   

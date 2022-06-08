@@ -442,3 +442,7 @@ section#copyright {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+.eventbutton {
+  background: transparent;
+  border: none;
+}

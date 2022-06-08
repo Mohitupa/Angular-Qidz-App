@@ -29,6 +29,8 @@ import { CaterpillarSectionComponent } from './qidz-event-details/caterpillar-se
 import { EventDiscountSectionComponent } from './qidz-event-details/event-discount-section/event-discount-section.component';
 import { MediaSidebarSectionComponent } from './qidz-event-details/media-sidebar-section/media-sidebar-section.component';
 import { BreakfastSectionComponent } from './qidz-event-details/breakfast-section/breakfast-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegistrationComponent } from './Account/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -55,14 +57,16 @@ import { BreakfastSectionComponent } from './qidz-event-details/breakfast-sectio
     CaterpillarSectionComponent,
     EventDiscountSectionComponent,
     MediaSidebarSectionComponent,
-    BreakfastSectionComponent
+    BreakfastSectionComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     CarouselModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
